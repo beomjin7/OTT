@@ -18,7 +18,8 @@
 </template>
 
 <script>
-import Imgdata from './assets/Imgdata.js';
+import Cmddata from './assets/Cmddata.js';
+
 import Navbar from './components/Navbar.vue';
 import Modalopen from './components/Modalopen.vue';
 import Listpro from './components/Listpro.vue';
@@ -33,20 +34,22 @@ export default {
   name: 'App',  
   data() {
     return {
-      rooms: Imgdata,
+      rooms: Cmddata,
       Modalopen : true,
       Clickdata : 0,
       limited : 7,
+      
     }
   },
   components : {
     Navbar: Navbar,
     Modalopen: Modalopen,
     Listpro : Listpro,
+
 },
   methods : {
     addMovieData() {
-      this.limited += 8;
+      this.limited += 7 ;
     }
   }
 }

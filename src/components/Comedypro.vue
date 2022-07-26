@@ -12,6 +12,9 @@ export default {
     methods : {
       send() {
         this.$emit('openDoor', this.rooms.id)
+      },
+      post() {
+        this.$emit('openDoor', this.movies.id)
       }
     },
       props : {
