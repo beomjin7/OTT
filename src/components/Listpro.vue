@@ -1,7 +1,7 @@
 <template>
 <h1 class="title" v-if="rooms.id <= limited" >예능</h1>
 
-<Comedypro />
+<Comedypro a/>
 
 </template>
 
