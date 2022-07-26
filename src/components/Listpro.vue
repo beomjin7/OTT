@@ -5,6 +5,10 @@
 <Comedypro @openDoor="Modalopen = false; Clickdata = b" 
 :rooms="rooms[b]" :limited="limited" v-for="(a,b) in rooms" :key="b"/>
 
+<h1 >영화</h1>
+<Comedypro @openDoor="Modalopen = false; Clickdata = b" 
+:Moviedata="Moviedata[b]" :limited="limited" v-for="(a,b) in Moviedata" :key="b"/>
+
 </template>
 /*
 1.json파일을 분리

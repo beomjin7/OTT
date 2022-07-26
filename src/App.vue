@@ -19,7 +19,7 @@
 
 <script>
 import Cmddata from './assets/Cmddata.js';
-
+import Moviedata from './assets/Moviedata.js';
 import Navbar from './components/Navbar.vue';
 import Modalopen from './components/Modalopen.vue';
 import Listpro from './components/Listpro.vue';
@@ -34,7 +34,8 @@ export default {
   name: 'App',  
   data() {
     return {
-      rooms: Cmddata,
+      Moviedata : Moviedata,
+      rooms : Cmddata,
       Modalopen : true,
       Clickdata : 0,
       limited : 7,
