@@ -1,6 +1,6 @@
 <template>
 
-<div class="mid" v-if="rooms.id <= limited">
+<div class="mid" >
 <img :src="rooms.image" class="midimg" >
 <p @click="send">{{rooms.title}}</p>
 </div>
@@ -9,14 +9,16 @@
 <script>
 export default {
     name: "Comedypro",
-
-    
-    
     methods : {
       send() {
         this.$emit('openDoor', this.rooms.id)
       }
-    }
+    },
+      props : {
+      rooms : Object,
+      limited : Number,
+
+    },
 }
 </script>
 

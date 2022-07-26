@@ -5,8 +5,8 @@
 :Clickdata="Clickdata" :rooms="rooms" :Modalopen="Modalopen"/>
 </transition>
 
-<Listpro @openDoor="Modalopen = false; Clickdata = b" 
-:rooms="rooms[b]" :limited="limited" v-for="(a,b) in rooms" :key="b" />
+<Listpro  
+:rooms="rooms" :limited="limited" />
 
 
 <hr>
@@ -21,7 +21,6 @@
 import Imgdata from './assets/Imgdata.js';
 import Navbar from './components/Navbar.vue';
 import Modalopen from './components/Modalopen.vue';
-
 import Listpro from './components/Listpro.vue';
 
 
