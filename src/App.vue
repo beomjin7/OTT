@@ -11,7 +11,7 @@
 
 <hr>
 
-<label for="file" class="input-plus" @click="addMovieData">+</label>
+<button class="input-plus" @click="retrieve">+</button>
 
 
 
@@ -48,9 +48,10 @@ export default {
 
 },
   methods : {
-    addMovieData() {
-      this.limited += 7 ;
-    }
+    retrieve() {
+      this.$emit('openMenu', this.Moviepro.vue)
+    },
+
   }
 }
 </script>
@@ -63,7 +64,10 @@ body {
 
 .input-plus {
   cursor: pointer;
-  font-size : 50px;
+  font-size : 90px;
+  border : none;
+  background-color : #EAEAEA;
+
   
 }
 
