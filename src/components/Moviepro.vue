@@ -1,21 +1,21 @@
 <template>
 
 <div class="mid" >
-<img :src="rooms.image" class="midimg" >
-<p @click="send">{{rooms.title}}</p>
+<img :src="movies.image" class="midimg" >
+<p @click="post">{{movies.title}}</p>
 </div>
 </template>
 
 <script>
 export default {
-    name: "Comedypro",
+    name: "Moivepro",
     methods : {
-      send() {
-        this.$emit('openDoor', this.rooms.id)
-      },
+      post() {
+        this.$emit('doorOpen', this.movies.id)
+      }
     },
       props : {
-      rooms : Object,
+      movies : Object,
     },
 }
 </script>

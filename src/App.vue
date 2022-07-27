@@ -2,11 +2,11 @@
 <Navbar />
 <transition name="fade">
 <Modalopen @closeModal="Modalopen = ture" 
-:Clickdata="Clickdata" :rooms="rooms" :Modalopen="Modalopen"/>
+:Clickdata="Clickdata" :rooms="rooms" :Modalopen="Modalopen" :Moviedata="Moviedata" />
 </transition>
 
 <Listpro  
-:rooms="rooms" :limited="limited" />
+:rooms="rooms" :Moviedata="Moviedata" />
 
 
 <hr>
@@ -38,7 +38,6 @@ export default {
       rooms : Cmddata,
       Modalopen : true,
       Clickdata : 0,
-      limited : 7,
       
     }
   },
