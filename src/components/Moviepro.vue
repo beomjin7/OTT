@@ -1,8 +1,8 @@
 <template>
 
 <div class="mid" >
-<img :src="movies.image" class="midimg" >
-<p @click="post">{{movies.title}}</p>
+<img :src="Moviedata.image" class="midimg" >
+<p @click="post">{{Moviedata.title}}</p>
 </div>
 </template>
 
@@ -11,11 +11,11 @@ export default {
     name: "Moivepro",
     methods : {
       post() {
-        this.$emit('doorOpen', this.movies.id)
+        this.$emit('doorOpen', this.Moviedata.id)
       }
     },
       props : {
-      movies : Object,
+      Moviedata : Object,
     },
 }
 </script>

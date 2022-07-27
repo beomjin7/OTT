@@ -1,11 +1,15 @@
 <template>
+<div>
 <h1 class="title" >예능</h1>
 <Comedypro @openDoor="Modalopen = false; Clickdata = b" 
 :rooms="rooms[b]"  v-for="(a,b) in rooms" :key="b"/>
+</div>
 
+<div>
 <h1 class="title" >영화</h1>
 <Moviepro @openDoor="Modalopen = false; Clickdata = b" 
 :Moviedata="Moviedata[b]" s v-for="(a,b) in Moviedata" :key="b"/>
+</div>
 
 </template>
 
