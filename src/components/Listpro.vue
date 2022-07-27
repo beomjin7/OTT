@@ -5,7 +5,7 @@
 :rooms="rooms[b]"  v-for="(a,b) in rooms" :key="b"/>
 </div>
 
-<div v-if="openMenu == false">
+<div>
 <h1 class="title" >영화</h1>
 <Moviepro @openDoor="Modalopen = false; Clickdata = b" 
 :Moviedata="Moviedata[b]" s v-for="(a,b) in Moviedata" :key="b"/>
@@ -37,6 +37,11 @@ export default {
       Moviedata : Object,
 
     },
+    methods : {
+      retrieve(){
+
+      }
+    }
     
     
 
