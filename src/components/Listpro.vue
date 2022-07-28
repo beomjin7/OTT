@@ -5,7 +5,7 @@
 :rooms="rooms[b]"  v-for="(a,b) in rooms" :key="b"/>
 </div>
 
-<div v-if="movieOpen == false" >
+<div @openMovie="movieOpen = false" >
 <h1 class="title">영화</h1>
 <Moviepro @openDoor="Modalopen = false; Clickdata = b" 
 :Moviedata="Moviedata[b]" s v-for="(a,b) in Moviedata" :key="b"/>

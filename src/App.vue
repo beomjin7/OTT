@@ -6,14 +6,14 @@
 </transition>
 
 <Listpro  
-:rooms="rooms" :Moviedata="Moviedata" @openDoor="Modalopen = false"  />
+:rooms="rooms" :Moviedata="Moviedata"  @openDoor="Modalopen = false"  />
 
 
 <hr>
 
 
-<label for="file" class="input-plus" v-if="movieOpen == true" >+</label>
-
+<label for="file" class="input-plus"  >+</label>
+http://localhost:8080/
 
 
 </template>
@@ -60,7 +60,7 @@ body {
 
 .input-plus {
   cursor: pointer;
-  font-size : 50px;
+  font-size : 50px;   
   border : none;
   background-color : #EAEAEA;
 
