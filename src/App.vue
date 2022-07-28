@@ -1,17 +1,18 @@
 <template>
 <Navbar />
 <transition name="fade">
-<Modalopen @closeModal="Modalopen = ture" 
+<Modalopen @closeModal="Modalopen = true" 
 :Clickdata="Clickdata" :rooms="rooms" :Modalopen="Modalopen" :Moviedata="Moviedata" />
 </transition>
 
 <Listpro  
-:rooms="rooms" :Moviedata="Moviedata" />
+:rooms="rooms" :Moviedata="Moviedata" @openDoor="Modalopen = false"  />
 
 
 <hr>
 
-<button class="input-plus" @click="retrieve">+</button>
+
+<label for="file" class="input-plus" v-if="movieOpen == true" >+</label>
 
 
 
@@ -38,6 +39,7 @@ export default {
       rooms : Cmddata,
       Modalopen : true,
       Clickdata : 0,
+      movieOpen : true,
       
     }
   },
@@ -46,13 +48,7 @@ export default {
     Modalopen: Modalopen,
     Listpro : Listpro,
 
-},
-  methods : {
-    retrieve() {
-      this.$emit('openMenu', this.Moviepro.vue)
-    },
-
-  }
+  },
 }
 </script>
 
@@ -64,7 +60,7 @@ body {
 
 .input-plus {
   cursor: pointer;
-  font-size : 90px;
+  font-size : 50px;
   border : none;
   background-color : #EAEAEA;
 
