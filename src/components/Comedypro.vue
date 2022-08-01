@@ -4,6 +4,12 @@
 <img :src="rooms.image" class="midimg" >
 <p @click="send">{{rooms.title}}</p>
 </div>
+<!--
+<div>
+<Comedypro @openDoor="Modalopen = false; Clickdata = b" 
+/>
+</div>
+-->
 </template>
 
 <script>

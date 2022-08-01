@@ -1,14 +1,27 @@
 <template>
-
 <div class="mid" >
 <img :src="Moviedata.image" class="midimg" >
 <p @click="post">{{Moviedata.title}}</p>
 </div>
+
+<!--
+<div>
+<Moviepro @openDoor="Modalopen = false; Clickdata = b" />
+</div>
+-->
 </template>
 
 <script>
+
+
+
 export default {
     name: "Moivepro",
+    data(){
+      return {
+        
+      }
+    },
     methods : {
       post() {
         this.$emit('doorOpen', this.Moviedata.id)
@@ -16,6 +29,7 @@ export default {
     },
       props : {
       Moviedata : Object,
+      
     },
 }
 </script>

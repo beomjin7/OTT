@@ -12,10 +12,6 @@
 <hr>
 
 
-<label for="file" class="input-plus"  >+</label>
-http://localhost:8080/
-
-
 </template>
 
 <script>
@@ -39,7 +35,7 @@ export default {
       rooms : Cmddata,
       Modalopen : true,
       Clickdata : 0,
-      movieOpen : true,
+      
       
     }
   },
@@ -56,15 +52,6 @@ export default {
 body {
     background-color: #EAEAEA;
     text-align: center; 
-}
-
-.input-plus {
-  cursor: pointer;
-  font-size : 50px;   
-  border : none;
-  background-color : #EAEAEA;
-
-  
 }
 
 .fade-enter-from {
